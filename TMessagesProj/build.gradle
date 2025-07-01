@@ -111,10 +111,9 @@ android {
         externalNativeBuild {
             cmake {
                 version '3.10.2'
-                arguments '-DANDROID_STL=c++_static', '-DANDROID_PLATFORM=android-16'
+                arguments '-DANDROID_STL=c++_static', '-DANDROID_PLATFORM=android-16', '-Wl,-z,max-page-size=16384' // <-- Add this new argument
             }
         }
-    }
 
     buildTypes {
         debug {
