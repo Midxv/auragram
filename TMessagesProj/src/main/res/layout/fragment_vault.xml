@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    tools:context=".VaultFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vault_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:visibility="gone" /> <LinearLayout
+    android:id="@+id/empty_state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/vault_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_vault_empty_state"
+        app:tint="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/vault_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Vault is Secure"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/vault_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap the '+' button to add your first item."
+        android:textSize="16sp"
+        android:textColor="#AAAAAA"
+        android:gravity="center" />
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_note_fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_24"
+        android:background="@drawable/floating_button_states"
+        android:tint="@android:color/white"
+        android:scaleType="center"
+        android:contentDescription="Add Note"/>
+
+</FrameLayout>

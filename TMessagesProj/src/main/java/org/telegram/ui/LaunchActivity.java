@@ -669,6 +669,9 @@ public class LaunchActivity extends BasePermissionsActivity implements INavigati
                 } else if (id == 10) {
                     presentFragment(new CallLogActivity());
                     drawerLayoutContainer.closeDrawer(false);
+                } else if (id == 20) { // <-- ADD THIS BLOCK FOR THE VAULT
+                    presentFragment(new PasscodeFragment());
+                    drawerLayoutContainer.closeDrawer(false);
                 } else if (id == 11) {
                     Bundle args = new Bundle();
                     args.putLong("user_id", UserConfig.getInstance(currentAccount).getClientUserId());
