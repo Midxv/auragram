@@ -1,4 +1,4 @@
-## Auragram messenger for Android is a fork Telegram.
+## Auragram messenger for Android is a fork of Telegram.
 
 [Telegram](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
 This repo contains the official source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
@@ -6,9 +6,13 @@ This repo contains the official source code for [Telegram App for Android](https
 Additional Features of AuraGram?
 
 • Telegram Premium 
+
 • Smooth no Clutter
+
 • Private Local Vault
+
 • Fast Download/ Upload Speed
+
 and more for you to checkout!;
 
 ## Create your own
